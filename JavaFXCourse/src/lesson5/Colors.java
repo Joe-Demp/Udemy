@@ -1,4 +1,4 @@
-package lesson4;
+package lesson5;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -14,7 +14,7 @@ import javafx.scene.shape.Circle;
  * 	Pane.setRotate(double angle)
  * 	
  */
-public class Style extends Application {
+public class Colors extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 //		A stage with a small button, now rotated
