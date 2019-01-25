@@ -9,10 +9,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 /*	***Notes***
- * Methods:	
- * 	Node.setStyle(String -fx-CSS)
- * 	Pane.setRotate(double angle)
- * 	
+ * 
  */
 public class Colors extends Application {
 	@Override
@@ -40,7 +37,20 @@ public class Colors extends Application {
 		circle.setRadius(50);
 //		circle.setStroke(Color.AZURE);
 //		circle.setFill(Color.AZURE);
-		circle.setStyle("-fx-stroke: black; -fx-fill: red;");
+		
+//		Note: fxcss takes precedence over set methods
+//			must comment this section out to ensure the section below works
+//		circle.setStyle("-fx-stroke: black; -fx-fill: red;");
+		
+		/*Start of Tutorial*/
+		Color color = new Color(0.4, 0.77, 0.522, 0.8);
+		Color color2 = color.brighter();
+		Color color3 = color2.darker();
+		Color color4 = Color.color(0.9, 0.32, 0.11, 0.43);
+		Color color5 = Color.rgb(234, 10, 210, 0.21);
+		
+		circle.setFill(color5);
+		/*End of tutorial*/
 		
 		pane1.getChildren().add( circle );
 		
